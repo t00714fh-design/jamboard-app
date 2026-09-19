@@ -1,0 +1,75 @@
+# jamboard-app_開発ノート
+
+==================================================
+■ 2026/09/19【STEP 1・2完了 ＆ Chromebook移行準備完了】
+==================================================
+
+### 1. プロジェクト基本情報
+- アプリ名: jamboard-app
+- GitHubユーザー名: t00714fh-design
+- リポジトリURL: https://github.com/t00714fh-design/jamboard-app
+- 使用ブランチ: main
+- 現在のステータス: ホワイトボード描画機能が全画面で正常動作中
+- 次の予定: STEP 3（Firebaseを活用した複数端末でのリアルタイム共同作業機能の実装）
+
+---
+
+### 2. 新しいGeminiチャットへの引き継ぎ用プロンプト
+※新しいチャットを始めるときは、以下の枠内を全選択して送信してください。
+
+--------------------------------------------------
+以下の【開発引き継ぎノート】を読み込んで、開発のサポートをお願いします。
+
+# 1. リポジトリ・進捗情報
+- URL: https://github.com/t00714fh-design/jamboard-app
+- ブランチ: main
+- 送信状態: Windows環境でコミット・Push完了
+
+# 2. 完了したステップ
+- STEP 1: Windows PCでの開発環境構築（Vite + React + TypeScript + tldraw）
+  - App.tsx / index.css の書き換えによる全画面ホワイトボード化完了
+- STEP 2: GitHub連携とChromebook引き継ぎ環境の確立
+  - コードのコミット・Push完了
+  - GitHub Codespaces を用いたブラウザ上での開発・開発サーバー起動（http://localhost:5173/）確認済み
+
+# 3. 現在の状況・次の予定
+- 現在の状況: ホワイトボード描画機能が画面全体で正常動作中。
+- 次の作業予定: STEP 3（Firebaseを活用した複数端末でのリアルタイム共同作業機能の実装）
+
+# 4. Chromebook（GitHub Codespaces）での開発再開手順
+1. Chromeブラウザで https://github.com/t00714fh-design/jamboard-app を開く
+2. 緑色の「<> Code」ボタン ＞「Codespaces」タブ ＞「Create codespace on main」を選択
+3. 画面下のターミナルで `npm run dev` を実行
+4. 右下のポップアップから「ブラウザで開く」をクリックして動作確認
+
+【作業保存手順】
+作業終了時はターミナルで以下を実行：
+   git add .
+   git commit -m "作業内容のメモ"
+   git push
+
+---
+【Geminiへの依頼】
+上記の前提知識を把握した上で、STEP 3（Firebaseを使ったリアルタイム共同作業機能の実装）の案内・サポートを開始してください。
+--------------------------------------------------
+
+---
+
+### 3. 日常作業コマンド集
+
+【作業終了時（GitHubへ保存）】
+git add .
+git commit -m "作業内容のメモ"
+git push
+
+【作業開始時（最新データを取得）】
+git pull
+npm run dev
+
+==================================================
+■ 過去の対応履歴（トラブルシューティング等）
+==================================================
+- GUI自動公開衝突: ターミナル手動送信に切り替え
+- Gitユーザー未設定: git config --global でemail/nameを登録
+- ブランチ名修正: master -> main に変更（git branch -M main）
+- 動作確認: npm run dev で http://localhost:5173/ の正常稼働を確認
